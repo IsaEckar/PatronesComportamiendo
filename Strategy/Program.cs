@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Strategy;
+
+//Se crea la instancia del sistema de factiracion clientes Minoristas
+var sistemaFacturacionMinorista = new SistemaCobranza(new EstrategiaCalculoPrecioMinoristas());
+
+
+// Calcular el precio final para un producto con precio base de $200.000
+double ventaMenorPrecioFinal = sistemaFacturacionMinorista.CalcularPrecioFinal(200000);
+Console.WriteLine("El Precio Final del Producto para el cliente Minorista: $" + ventaMenorPrecioFinal);
+Console.WriteLine("");
+
+// Crear una instancia del sistema de facturación para clientes mayoristas
+var estrategiaCalculoPrecioMayoristas = new SistemaCobranza(new EstrategiaCalculoPrecioMayoristas());
+
+// Calcular el precio final para un producto con precio base de $200.000
+double mayoristaPrecioFinal = estrategiaCalculoPrecioMayoristas.CalcularPrecioFinal(200000);
+Console.WriteLine("El Precio Final del Producto para el cliente Mayorista: $" + mayoristaPrecioFinal);
