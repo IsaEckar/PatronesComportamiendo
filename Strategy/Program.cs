@@ -1,11 +1,11 @@
 ﻿using Strategy;
 
-//Se crea la instancia del sistema de factiracion clientes Minoristas
-var sistemaFacturacionMinorista = new SistemaCobranza(new EstrategiaCalculoPrecioMinoristas());
+//Se crea la instancia del sistema de facturacion clientes Minoristas
+var estrategiaCalculoPrecioMinorista = new SistemaCobranza(new EstrategiaCalculoPrecioMinoristas());
 
 
 // Calcular el precio final para un producto con precio base de $200.000
-double ventaMenorPrecioFinal = sistemaFacturacionMinorista.CalcularPrecioFinal(200000);
+double ventaMenorPrecioFinal = estrategiaCalculoPrecioMinorista.CalcularPrecioFinal(200000);
 Console.WriteLine("El Precio Final del Producto para el cliente Minorista: $" + ventaMenorPrecioFinal);
 Console.WriteLine("");
 
