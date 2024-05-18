@@ -1,2 +1,2 @@
 Integrantes: 
-Melissa Arcila - Isaura Eckar - Diana Velásquez - Emanuel Naranjo.
+ -Isaura Eckar - Diana Velásquez - Emanuel Naranjo - Melissa Arcila.
